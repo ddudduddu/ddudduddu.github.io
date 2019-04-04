@@ -1,0 +1,297 @@
+ /*Layout */
+body{
+	background-color:#e6f4f8;
+}
+
+/* Header */
+.header{
+	position:relative;/*1. 기준점 잡기*/
+	width:960px;/*2.*/
+	margin:0 auto;/*3. 가운데 정렬*/
+}
+.header h1{
+	padding:38px 0 38px 14px;
+}/*10*/
+.header h1 a{
+	display:inline-block;
+}/*11*/
+.header h1 img{
+	max-width:192px
+}/*12. 이미지 사이즈 주기*/
+
+/* nav */
+.nav{
+	position: absolute;/*4*/
+	top:50px;/*13. 네비게이션 위치 변경*/
+	right:0;
+}
+.nav::after{
+	content:"";
+	display:block;
+	clear:both;
+}/*8. 클리어처리*/
+.nav a{
+	display:inline-block;/*5*/
+	float:left;/*7*/
+	padding:0 14px;/*6*/
+	color:#2f323a; font-size:16px; font-weight:bold;/*9. 글자 스타일 주기*/
+}
+
+/* Main Contents */
+.main{
+ width:960px;
+ margin:0 auto 110px;
+ text-align:center;/*31*/
+}/*25. 가운데정렬 시키는 용도*/
+.main section, .main article, .main div{
+	position:relative;
+	}/*38*/
+.main section::after, .main article::after, .main div::after{
+content:"";
+display: block;
+clear:both;
+}/*37*/
+.main span{
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	color:#fff;
+	font-size:5.6640625vw;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+}/*33*/
+.main span strong{
+	display:inline-block;/*34*/
+	width:100%;/*36*/
+	padding-bottom:4vw;/*36(vw:viewport with)*/
+	color:inherit;/*34*/
+	font-size:inherit;/*34*/
+}/*34, 36*/
+.main span a{
+	display:inline-block;
+	min-width:120px;
+	min-height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:inherit;
+	border:1px solid rgba(255,255,255,.5);
+	border-radius:40px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	-ms-border-radius:40px;
+	-o-border-radius:40px;
+}/*35*/
+.about{
+	position:relative;/*27*/
+	margin-bottom:1%;/*41*/
+	height:492px;/*26. 배경으로 깔 높이값 주기*/
+	background-repeat:no-repeat;/*28*/
+	background-position:50% 50%;/*29*/
+	background-image: url(../image/hero.jpg);/*30*/
+}
+.portfolio{
+	/*position: relative;/*32*/
+	margin-bottom:1%;
+}
+.portfolio article{
+	/*position: relative;/*32*/
+	float:left;/*39*/
+	width:49.5%;
+	height:305px;
+	background-color: #b9a88e;
+}
+.portfolio article:last-child{
+	float: right;/*40*/
+	background-color: #2d2d35;
+}
+.portfolio span{
+	font-size:3.515625vw;
+}/*42*/
+.portfolio span a{
+	min-width:100px;
+	min-height:30px;
+	line-height:30px;
+	font-size:13px;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-ms-border-radius:30px;
+	-o-border-radius:30px;
+}/*43*/
+.skill{
+	
+}
+.skill span{
+	font-size:2.34375vw;
+}/*53*/
+.skill span a{
+	min-width:90px;
+	min-height:25px;
+	line-height:25px;
+	font-size:12px;
+	border-radius:25px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-ms-border-radius:25px;
+	-o-border-radius:25px;
+}/*54*/
+.skill article{
+	/*position: relative;/*32*/
+	float: left;
+	width:49.5%;
+}/*44*/
+.skill article:last-child{
+	float:right;
+	width:49.5%;
+}/*45*/
+.skill article div{
+	/*position: relative;/*32*/
+	float:left;
+	width:49%;
+	height:230px;/*48*/
+	background:no-repeat;/*48*/
+	background-position: 50% 50%;/*48*/
+}/*46*/
+.skill article div:last-child{
+	float:right;
+}/*47*/
+.skill article:first-child div:first-child{
+	background-image: url(../image/gallery-1.jpg);
+}/*49*/
+.skill article:first-child div:last-child{
+	background-image: url(../image/gallery-2.jpg);
+}/*50*/
+.skill article:last-child div:first-child{
+	background-image: url(../image/gallery-3.jpg);
+}/*51*/
+.skill article:last-child div:last-child{
+	background-image: url(../image/gallery-4.jpg);
+}/*52*/
+/*.skill article:nth-child(1) div:nth-child(1){
+	background-image: url(../image/gallery-1.jpg);
+}
+.skill article:nth-child(1) div:nth-child(2){
+	background-image: url(../image/gallery-2.jpg);
+}
+.skill article:nth-child(2) div:nth-child(1){
+	background-image: url(../image/gallery-3.jpg);
+}
+.skill article:nth-child(2) div:nth-child(2){
+	background-image: url(../image/gallery-4.jpg);
+} */
+
+/* footer */
+.footerwrap{
+	background-color:#dbecf1;
+}/*14. footer bg color*/
+.footer{
+	position:relative;/*16. 기준점*/
+	width:960px;
+	margin:0 auto;/*15. header 처럼 작업*/
+	padding:38px 14px;/*17. */
+}
+.footer .sns{
+	position: absolute;/*18*/
+	top:38px;
+	right:14px;/*19*/
+	text-align:center;/*21*/
+}
+.footer .sns a{
+	display:inline-block;/*20*/
+	vertical-align: middle;/*24-1. 메신저 아이콘 크기가 달라서 중앙정렬 시키기*/
+}
+.footer .sns a:last-child img{
+	position: relative;
+	top:1px;
+}/*24-2. 다른거에 영향을 안주고 본인만 내리고 싶으면 lastchild*/
+.footer .sns img{
+	
+}
+.footer address{
+	margin-bottom:10px;
+	color:#708287;
+	font-size:13px;
+}/*22. 스타일주기~*/
+
+.footer .copy{
+	color:#708287;
+	font-size:13px;
+}/*23. 22에서 mar-b 빼고 똑같이*/
+
+
+@media(max-width:959px){
+	/*53 반응형 모드 맞추기- 아래부터 pc버전 스타일 비교해서 바꾸기*/
+	body{
+		padding:0 15px;
+	}/*55. 떨어진 부분*/
+	/*Header*/
+	.header{
+		width:100%;
+		text-align:center;
+	}/*54*/
+	.header h1{
+		padding:3.1709375vw 0 2vw;
+	}/*56*/
+	.header h1 img{
+		max-width:18.75vw;
+	}/*57*/
+
+	/* nav */
+	.nav{
+		position:static;/*58. 앱솔루트 해제(좌표값이 의미 없어짐)*/
+		width:100%;/*59*/
+		margin-bottom:2vw;
+	}
+	.nav a{
+		width:calc(100% / 3);
+		padding:14px;
+		text-align: center;
+	}/*60*/
+
+	/* Main Contetns */
+	.main{
+		width:100%;
+	}/*61*/
+
+
+
+
+	.skill article{float:none; width:100%;}
+	.skill article:last-child{float:none; width:100%; margin-top:1%;}
+	.skill article div{width:49.5%;}
+	
+	/*높이값 고정*/
+	.about{height:48.046875vw;}
+	
+	.portfolio article{height:29.75815625vw;}
+	
+	.skill article div{width:49.5%; height:22.4609375vw;}
+
+
+	/* Footer */
+	.footerwrap{
+		margin:0 -15px;
+	}/*64. 간격 채우기*/
+	.footer{
+		width:100%;
+		padding:3.7109375vw 0;
+		text-align:center;
+	}/*62*/
+	.footer .sns{
+		position:static;
+		margin-bottom:2vw;
+	}/*63*/
+
+
+
+
+
+
+
+
+}
