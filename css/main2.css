@@ -1,0 +1,339 @@
+/* reset */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height:1;
+	color:#2f323a;
+	font-size:14px;
+	font-family:"맑은 고딕";
+	border:0;
+	font-style:normal;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+html,body{
+	height:100%
+}/*16*/
+body{
+	background-color:#e6f4f8;
+}/*15*/
+/* header */
+.header{
+	position:relative;/*3*/
+	width:960px;/*1*/ 
+	height:145px;/*높이가 정해져있어서 해제시킬 필요 없음 4*/
+	margin: auto;/*2*/
+	padding:60px 10px 50px;/*5*/
+}/*1*/
+.header h1{
+
+}
+.header h1 a{
+	display:inline-block;/*6*/
+}
+.header h1 img{
+	max-width:94px;/*7*/
+}
+
+/* nav */
+.nav{
+	position:absolute;/*8*/
+	bottom:50px;/*9*/
+	right:0px;/*10*/
+}
+.nav a{
+	display:inline-block;/*11*/
+	padding:0 10px;/*12*/
+	font-size:15px;/*14*/
+	font-weight:bold;/*13*/
+}
+
+/* footer */
+.footer{
+	background-color:#dbecf1;
+}/*17*/
+.foot{
+	position:relative;/*21*/
+	width:960px;/*18*/
+	height:100px;/*19*/
+	margin:0 auto;/*20*/
+}
+.sns{
+	position: absolute;/*28*/
+	top:30px;/*29*/
+	right:0;/*30*/
+}
+.sns a{
+	display:inline-block;/*34*/
+	width:15px;/*35*/
+	height:15px;/*36*/
+	margin:0 10px;/*39*/
+	line-height:15px;/*37*/
+	text-align:center;/*38*/
+}
+.sns img{
+	
+}
+.copyright{
+	position: absolute;/*22*/
+	bottom:30px;/*23*/
+	left:0;/*26*/
+	color:#708287;/*31*/
+}
+.designby{
+	position:absolute;/*24*/
+	bottom:30px;/*25*/
+	right:0;/*27*/
+	color:#708287;/*32*/
+}
+.designby b{
+	color:#2f323a;/*32*/
+}
+
+/* main */
+.main{
+	width:960px;/*40*/
+	margin:0 auto;/*41*/
+	margin-bottom:50px;/*86*/
+	overflow:hidden;/*67 둘중에 하나 해도 됨*/
+}
+.main::after{
+	content:"";
+	display:block;
+	clear:both;
+}/*67 중에 하나 해도 됨*/
+.main section{
+	position: relative;/*기준점을 가운데 두개짜리로 잡음42*/
+	float: left;/*43*/
+	width:49.5%;/*44*/
+	height:305px;/*45*/
+	margin-top:1%;/*77*/
+	margin-left:1%;/*78*/
+	background-repeat: no-repeat;/*46*/
+	background-position:50% 50%;/*47*/ 
+	background-size:100% 100%;/*48*/
+	color:#fff;/*49*/
+	font-size:18px;/*50*/
+}
+.main div{
+	position:absolute;
+	/*60*/
+	top:50%;
+	/*61*/
+	left:0;
+	/*62*/
+	width:100%;
+	/*63*/
+	text-align:center;
+	color:inherit;
+	/*57*/
+	font-size:inherit;
+	/*57*/
+	transform:translateY(-50%) ;
+	/*66*/
+	-webkit-transform:translateY(-50%) ;
+	-moz-transform:translateY(-50%) ;
+	-ms-transform:translateY(-50%) ;
+	-o-transform:translateY(-50%) ;
+	-webkit-transform:translateY(-50%) ;
+}
+.main h2{
+	color:inherit;/*55*/
+	font-size:inherit;/*56*/
+}
+.main em{
+	display: inline-block;/*58*/
+	width:100%;
+	margin-bottom:20px;/*65*/
+	color:inherit;/*54*/
+	font-size:36px;/*53*/
+	font-weight:normal;/*68*/
+}
+.main strong{
+	display: inline-block;/*59*/
+	width:100%;
+	margin-bottom:20px;/*65*/
+	color:inherit;/*51*/
+	font-size:inherit;/*52*/
+	font-weight:normal;/*69*/
+}
+.main .more{
+	display:inline-block;/*66*/
+	width:120px;/*66*/
+	height:40px;/*66*/
+	border:1px solid #fff;/*66*/
+	color:inherit;/*66*/
+	line-height:38px;/*57*/
+	font-size:inherit;/*57*/
+	border-radius:40px;/*66*/
+}
+/*---- 공통적인 거 끝----*/
+
+
+/* portfolio*/
+.main .portfolio{
+	float:none;/*74*/
+	width:100%;/*75*/
+	height:496px;/*76*/
+	margin-top:0;/*78*/
+	margin-left:0;/*79*/
+	background-image:url(../image/img1.jpg);/*88*/
+}
+.main .portfolio div{
+	top:0;
+	/*89*/height:100%;
+	/*90*/transform:translateY(0);
+	-webkit-transform:;
+	-moz-transform:;
+	-ms-transform:;
+	-o-transform:;
+}
+.main .portfolio h2{
+	position:absolute;
+	/*91*/top:50%;
+	left:0;
+	width:100%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+}
+.main .portfolio em{
+	font-size:16px;/*92*/
+}
+.main .portfolio strong{
+	font-size:50px;/*93*/
+}
+.main .portfolio .more{
+	position:absolute;
+	/*94*/bottom:40px;
+	/*95*/left:50%;
+	/*96*/transform:translateX(-50%);/*97*/
+}
+
+
+/* html5 */
+.main .html5{
+	background-color:#b9a88e;/*71 가운데를 기준으로 잡아서 이거부터*/
+	margin-left:0;/*80*/
+}
+
+/* css3 */
+.main .css3{
+	float:right;/*70*/
+	background-color:#2d2d35;/*72*/
+}
+
+.main .less, .main .js, .main .svn, .main .git{
+	width:24.25%;/*82 1000%-3%=97%/4=24.25%*/
+	height:230px;/*83*/
+}
+.main .less h2, .main .js h2, .main .svn h2, .main .git h2{
+	color:transparent;
+}/*85 화면상에는 안보이는데 드래그 하면 보임*/
+
+
+/* less */
+.main .less{
+	clear:both;/*73 밑으로 떨어지게*/
+	margin-left:0;/*81*/
+	background-image:url(../image/less.jpg);/*84*/
+}
+
+/* js */
+.main .js{
+	background-image:url(../image/js.jpg);/*84*/
+}
+
+/* svn */
+.main .svn{
+	background-image:url(../image/svn.jpg);/*84*/
+}
+
+/* git */
+.main .git{
+	background-image:url(../image/git.jpg);/*84*/
+}
+
+
+@media(max-width:959px){
+
+	body{
+		padding:0 15px;/*98*/
+	}
+
+	/* header */
+	.header{
+		width:100%;/*99*/
+		height:auto;/*106*/
+		padding:45px 0 34px;/*100*/
+		/*height:145px;100*/
+		text-align:center;/*101*/
+	}
+
+	/* nav */
+	.nav{
+		position:static;/*102 좌표값의미가 없어짐*/
+		margin-top:20px;/*103*/
+	}
+
+	/* footer */
+	.footer{
+		margin:0 -15px;/*104 100%만큼 옆으로 붙음*/
+	}
+	.foot{
+		width:100%;/*105*/
+		height:auto;/*107*/
+		padding:30px 0;/*108*/
+		text-align:center;/*109*/
+
+	}
+	.sns, .copyright, .designby{
+		position:static;/*110 포지션 해제*/
+	}
+	.copyright{
+		margin:15px 10px;/*111*/
+	}
+
+	/* main */
+	.main{
+		width:100%;/*112*/
+		margin-bottom:45px;/*113*/
+	}
+	.main section{
+		height:374px;/*114 먼저 기준 잡았던 html5*/
+	}
+	.main em{
+		font-size:28px;/*115*/
+	}
+	/* portfolio*/
+	.main .portfolio{
+		height:376px;/*116*/
+	}
+	.main .portfolio strong{
+		font-size:36px;/*117*/
+	}
+
+	.main .less, .main .js, .main .svn, .main .git{
+		width:49.5%;/*118*/
+		height:374px;/*119*/
+		margin-left:0;/*120*/
+	}
+
+	/* js */
+	.main .js{
+		float:right;/*121*/
+	}
+	/*  svn */
+	.main .svn{
+		clear:both;/*122*/
+	}
+	/* git */
+	.main .git{
+		float:right;/*123*/
+	}
+
+
+/* END : @media(max-width:959px)*/
