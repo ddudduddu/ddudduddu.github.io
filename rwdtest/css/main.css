@@ -1,0 +1,232 @@
+*{
+	margin:0;
+	padding:0;
+	line-height:1;
+	box-sizing:border-box;
+	color:#2f323a;
+	font-size:14px;
+	font-style:normal; 
+	text-decoration:none;
+}
+
+body{
+	background-color:#e6f4f8;
+}
+
+/* header */
+.header{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+}
+h1{
+	max-width:196px;
+	padding:63px 0 50px 10px;
+}
+
+/* navigation */
+.navigation{
+	position:absolute;
+	top:68px;
+	right:0;
+}
+.navigation a{
+	color:#2f323a;
+	font-size:16px;
+	font-weight:bold;
+	padding:0 10px;
+}
+
+/* footer */
+.footer{
+	width:100%;
+	height:100px;
+	background-color:#dbecf1;
+	margin-top:50px;
+}
+.foot{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+}
+.sns{
+	position:absolute;
+	top:30px;
+	right:0;
+}
+.sns a{padding:0 10px;}
+.copy{
+	color:#708287;
+	font-size:14px;
+	padding-top:60px;
+}
+.design{
+	position:absolute;
+	top:60px;
+	right:0;
+	color:#708287;
+	font-size:14px;
+}
+.design b{color:#2f323a;}
+
+/* main */
+.main{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.main section{
+	width:49.5%;
+	height:305px;
+	margin-top:1%;
+	margin-left:1%;
+	float:left;
+	text-align:center;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-size:100% 100%; 
+}
+.main section div{
+	padding-top:90px;
+}
+.main em{
+	display:block;
+	color:#fff;
+	font-size:36px;
+}
+.main strong{
+	display:block;
+	color:#fff;
+	font-size:18px;
+	padding:20px;
+}
+.main .more{
+	display:inline-block;
+	color:#fff;
+	font-size:14px;
+	padding:12px 38px;
+	border:1px solid #fff;
+	border-radius:40px;;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	-ms-border-radius:40px;
+	-o-border-radius:40px;
+}
+
+.main .html5{
+	background-color:#b9a88e;
+	margin-left:0;
+}
+.main .css3{
+	background-color:#2d2d35;
+}
+.main .less, .main .js, .main .svn, .main .git{
+	float:left;
+	width:24.25%;
+	height:230px;
+}
+.main .less h2, .main .js h2, .main .svn h2, .main .git h2{
+	color:transparent;
+}
+.main .less{
+	background-image:url(../image/less.jpg);
+	margin-left:0;
+}
+.main .js{
+	background-image:url(../image/js.jpg);
+}
+.main .svn{
+	background-image:url(../image/svn.jpg);
+}
+.main .git{
+	background-image:url(../image/git.jpg);
+}
+
+.main .portfolio{
+	width:100%;
+	height:493px;
+	margin-left:0;
+	background-image:url(../image/img4.jpg);
+}
+.main .portfolio div{
+	padding-top:187px;
+}
+.main .portfolio em{
+	font-size:16px;
+}
+.main .portfolio strong{
+	font-size:38px;
+}
+.main .portfolio .more{
+	margin-top:130px;
+}
+
+
+@media(max-width:959px){
+	body{
+		padding:0 15px;
+	}
+
+	.header{
+		position:static;
+		width:100%;
+		text-align:center;
+	}
+	h1{
+		display:block;
+		width:196px;
+		margin:0 auto;
+		padding-bottom:30px;
+	}
+	.navigation{
+		position:static;
+	}
+
+	.footer{
+		width:120%;
+		margin-top:50px;
+		margin-left:-15px;
+}
+	.foot{
+		width:100%;
+		padding-top:20px;
+		text-align:center;
+		margin-left:-15px;
+}
+	.sns{
+		position:static;
+		text-align:center;
+}
+	.copy{
+		position:static;
+		text-align:center;
+		padding:10px 0;
+}
+	.foot .design{
+		position:static;
+}
+
+	.main{width:100%;
+		margin-top:35px;	
+	}
+	.main section{
+		width:49.5%;
+		height:374px;
+	}
+	.main section div{
+		padding-top:120px;
+	}
+	.main .less, .main .js, .main .svn, .main .git{
+		width:49.5%;
+		height:374px;
+	}
+	.main .svn{margin-left:0;}
+	.main .portfolio{height:378px;}
+	.main .portfolio div{
+		padding-top:130px;
+	}
+	.main .portfolio .more{
+		margin-top:90px;
+	}
+}
